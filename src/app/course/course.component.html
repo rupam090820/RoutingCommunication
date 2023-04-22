@@ -1,0 +1,14 @@
+<div class="card" style="width: 18rem; ">
+    <div class="card-body" >
+        <h5 class="card-title">course details</h5>
+        <h6 class="card-subtitle mb-2 text-muted">this data fetch from DataShared</h6>
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let a of courselist"
+             (click)="send(a.std_id)"> 
+                {{a.course}}
+                <span class="badge badge-pills badge-success float-right">{{a.price|currency:'INR'}}</span>
+                <!-- here add (click)="send(a.std_id)" for send student id to student component -->
+            </li>
+        </ul>
+    </div>
+</div>

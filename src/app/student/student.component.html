@@ -1,0 +1,56 @@
+<!-- <ng-container *ngIf=" CourseData != 0 then searchblock else entireblock">
+</ng-container>
+
+<ng-template #searchblock>
+    <div *ngFor="let b of SInfo">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Id</th>
+                <th scope="col">Age</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+              <td>
+                {{b.std_name}}
+              </td>
+              <td>
+                {{b.std_id}}
+            </td>
+            <td>
+                {{b.age}}
+            </td>
+             </tr>
+                </tbody>
+          </table>
+    </div>
+</ng-template>
+<ng-template #entireblock> -->
+<!-- <div *ngIf="(student_id2!=0 && student_id2!=null)"> -->
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Id</th>
+            <th scope="col">Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                {{CourseData.std_name}}
+            </td>
+            <td>
+                {{CourseData.std_id}}
+            </td>
+            <td>
+                {{CourseData.age}}
+            </td>
+        </tr>
+    </tbody>
+</table>
+<!-- </div> -->
+
+<!-- </ng-template> -->
